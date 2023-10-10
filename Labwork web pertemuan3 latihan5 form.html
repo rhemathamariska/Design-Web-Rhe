@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Anggota Perpustakaan UNS</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Anggota Perpustakaan UNS</h1>
+    <form action="proses_pendaftaran.php" method="POST">
+        <table>
+            <tr>
+                <td>No. Anggota:</td>
+                <td><input type="text" name="nomor" required></td>
+            </tr>
+            <tr>
+                <td>No. Identitas :</td>
+                <td><input type="text" name="nim" required></td>
+            </tr>
+            <tr>
+                <td>Fakultas :</td>
+                <td><input type="text" name="fakultas" required></td>
+            </tr>
+            <tr>
+                <td>Nama Anggota :</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir :</td>
+                <td><input type="date" name="birth" required></td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><textarea name="alamat" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Daftar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
